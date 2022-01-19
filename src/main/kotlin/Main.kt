@@ -1,9 +1,9 @@
 // a) He implementado la clase abstracta en la clase ArmaDeFuego ya que esta no tiene por qué ser instanciada , aparte así sus clases hijas
-// heredaran los metodos  de la clase padre (en este caso heredado de la interface Disparo() porque el ejercicio pide que otras clases que no son armas de fuego puedan tambien disparar)
+// heredaran los metodos  de la clase padre (en este caso implementado de la interface Disparo() porque el ejercicio pide que otras clases que no son armas de fuego puedan tambien disparar)
 // b) Las clases abstractas nos permiten tener una clase base con cierta funcionalidad común ya implementada, sobre la que podemos heredar y especificar algunos métodos.
 //    A diferencia de las clases abstractas, una interfaz por sí sola no aporta funcionalidad, sino que fija un contrato que pueden implementar de manera distinta otras clases.
 // c) Lo único que he utilizado para forzar la herencia es "abstract", para que las clases concretas hereden la funcionalidad de la padre
-// Tambien he usado el modificador open y override para sobreescribir pero estos creo que no fuerzan ni obligan a nada .
+// Tambien he usado el modificador open y override para sobreescribir.
 // Además después de crear las subclases se les indica tras dos puntos el nombre de la clase padre para indicar la herencia y dentro de su constructor principal se hace referencia a sus propiedades.
 
 
@@ -159,7 +159,6 @@ open class Casa(override var nombre: String, override var municion: Int, overrid
         }
 
     }
-
 }
 
 open class Bocadillo(override var nombre: String, override var municion: Int, override var municionARestar: Int) :
